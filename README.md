@@ -1,5 +1,5 @@
 # Discord-Spam-Bot
-A self-bot discord program to automatically send a message(s) to multiple channel at once!
+A self-bot discord program to automatically send a message(s) to multiple channel at once!<br>
 Module used : [discord.js-selfbot](https://www.npmjs.com/package/discord.js-selfbot). Why the package has been deprecated? idk, it still works.
 
 ## Feature
