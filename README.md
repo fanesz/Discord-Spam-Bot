@@ -10,6 +10,23 @@ A self-bot discord program to automatically send a message(s) to multiple channe
 5. `At first, you may see an error, close the prompt`
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## config.json explanation
 
 
