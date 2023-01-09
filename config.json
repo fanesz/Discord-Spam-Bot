@@ -1,0 +1,15 @@
+{
+    "token":"YourBotToken",
+    "sendOnStart": true,
+    "prefix": "!!",
+    "repeatMsg": false,
+    "repeatMsgDelay": 10,
+    "msg": [
+        "Your first message!",
+        "and here your second message, you can add more also below here"
+    ],
+    "target":[
+        ["guildID1", "channelID1"], 
+        ["guildID2", "channelID2"]
+    ]
+}
