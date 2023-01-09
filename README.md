@@ -21,10 +21,10 @@ Module used : [discord.js-selfbot](https://www.npmjs.com/package/discord.js-self
 
 
 ## How to use
-1. `Download and install "NodeJS"`
-2. `Put all this file into one folder`
-3. `Open "config.json", edit what you need,` [config.json Explanation](#config-json-explanation)
-4. `Open "_run.bat" and wait the installation done, the bot will start by it self`
+1. Download and install [NodeJS](https://nodejs.org/en/download/)
+2. Put all this file into one folder
+3. Open "config.json", edit what you need, [config.json Explanation](#config-json-explanation)
+4. Open "_run.bat" and wait the installation done, the bot will start by it self
 note: at the first time, it will install the module so it will take some minutes.
 
 
