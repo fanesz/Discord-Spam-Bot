@@ -9,7 +9,7 @@ Module used : [discord.js-selfbot](https://www.npmjs.com/package/discord.js-self
 **Giving debug when the bot can't send the message.**<br>
 ![2](https://user-images.githubusercontent.com/91197642/211321646-ccfefe66-a0af-42dc-b44a-d5d88bc3e5c7.png)
 
-**Repeat Function, to keep spamming the bot.**<br>
+**Repeat Function, to keep the bot spamming.**<br>
 ![4](https://user-images.githubusercontent.com/91197642/211321666-1abebd2c-a02e-4676-8729-bde338914ee2.png)
 
 **Undo the message that was sent.**<br>
