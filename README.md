@@ -3,7 +3,7 @@ A self-bot discord program to automatically send a message(s) to multiple channe
 Module used : [discord.js-selfbot](https://www.npmjs.com/package/discord.js-selfbot). Why the package has been deprecated? idk, it still works.
 
 ## Feature
-**Automatically send a message(s) to multiple channel.**
+**Automatically send a message(s) to multiple channel.**\n
 ![1](https://user-images.githubusercontent.com/91197642/211321638-1318048b-a573-4380-a6de-2184e0c50561.png)
 
 **Giving debug when the bot can't send the message.**
