@@ -31,6 +31,6 @@ A self-bot discord program to automatically send a message(s) to multiple channe
 ## a
 
 
-## config.json explanation
+## <a id="config-json-explanation"></a>config.json Explanation
 
 
