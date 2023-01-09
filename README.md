@@ -13,4 +13,4 @@ A self-bot discord program to automatically send a message(s) to multiple channe
 
 ## Getting Started
 
-[Getting Started](#getting-started)
+[Getting Startedasd](#getting-started)
