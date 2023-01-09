@@ -5,8 +5,12 @@ A self-bot discord program to automatically send a message(s) to multiple channe
 **How to use :**
 1. `Download and install "NodeJS"`
 2. `Put all this file into one folder`
-3. `Open "config.json", edit what you need,` [config.json explanation](#config.json explanation)
+3. `Open "config.json", edit what you need,` 
 4. `Open "_run.bat" and wait the installation done, the bot will start by it self`
 5. `At first, you may see an error, close the prompt`
 
-## config.json explanation
+[config.json explanation](#config.json explanation)
+
+## Getting Started
+
+[Getting Started](#getting-started)
