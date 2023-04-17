@@ -32,7 +32,7 @@ note: at the first time, it will install the module so it will take some minutes
 4. **repeatMsg**, to enable repeat feature, it means the message will keep spamming every x second.
 5. **repeatMsgDelay**, explained at number 4.
 6. **commandExecutor**, userID, optional, it means another user to execute the bot command, keep it empty so only the user that used to self-bot can use the command.
-7. **msg**, the message. Keep on eye about formating, don't end up with ",".
+7. **msg**, the message, if you set more than 1, it will be randomized. Keep on eye about formating, don't end up with ",".
 8. **target**, for the channel target. the format is ["guildID1", "channelID1"], ["guildID2", "channelID2"], etc... how to get? google.
 
 
