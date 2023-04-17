@@ -45,3 +45,10 @@ What command i can use?
 2. `!!undo` to undo last sent message. But if you enabling repeatMsg, let say sending 4 message per 10 second, it only undo the last 4 message.
 3. `!!undoall` same as number 2, but to undo every single message that you sent since you start the bot, if you close the bot console, it reset.
 4. `!!repeatoff` to disable the repeat task but keep the bot online, incase you do something wrong about the message and want to undo it.
+
+
+## <a id="troubleshooting"></a>Troubleshooting
+1. If there is something error about token, this script can't use "bot" token, get user token for self-botting from `Developer Tools > Toggle Device Emulation (ctrl+shift+M) > Application > Local Storage > https://discord.com > Find "Token"`
+2. If there is error about "FAILED sent to xx", it means the user don't have access to the channel or wrong Guild/Channel ID.
+3. If there is error said like `HTTPError [AbortError]: The user aborted the request.`, it's connection problem, don't use VPN, you can keep trying or if still can't, open main.js with vscode, change the 2nd line from `const client = new Discord.Client();` to `const client = new Discord.Client({restRequestTimeout: 60000});`.
+4. If you want to make the spam msg have multiple line at config.json, make it become one line, but every new line, put \n. So like this `This is first line \n This is second line \n etc` or change the double quote (") to backquote (`), and it works for multiple lines.
