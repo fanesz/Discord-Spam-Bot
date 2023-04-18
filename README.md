@@ -26,7 +26,7 @@ note: at the first time, it will install the module so it will take some minutes
 
 ## <a id="config-json-explanation"></a>config.json Explanation
 ![6](https://user-images.githubusercontent.com/91197642/211317238-b8a68f7e-3569-43cc-9e5f-10bdeb0071e8.png)
-1. **Token**, your bot token, use user token (not a bot token). How to get? youtube.
+1. **Token**, your bot token, use user token (not a bot token). How to get the token? [Click here](#get-token).
 2. **sendOnStart**, it means the message automatically send after the bot start.
 3. **prefix**, to execute the bot command, [what command?](#command).
 4. **repeatMsg**, to enable repeat feature, it means the message will keep spamming every x second.
@@ -47,6 +47,29 @@ What command i can use?
 4. `!!repeatoff` to disable the repeat task but keep the bot online, incase you do something wrong about the message and want to undo it.
 5. `!!repeaton` to enable the repeat task but keep the bot online.
 
+
+## <a id="get-token"></a>Get User Token
+Open Discord at browser, press Ctrl + Shift + i, paste and enter code below to the console.
+```js
+window.webpackChunkdiscord_app.push([
+  [Math.random()],
+  {},
+  req => {
+    for (const m of Object.keys(req.c)
+      .map(x => req.c[x].exports)
+      .filter(x => x)) {
+      if (m.default && m.default.getToken !== undefined) {
+        return copy(m.default.getToken());
+      }
+      if (m.getToken !== undefined) {
+        return copy(m.getToken());
+      }
+    }
+  },
+]);
+console.log('%cWorked!', 'font-size: 50px');
+console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
+```
 
 ## <a id="troubleshooting"></a>Troubleshooting
 1. If there is something error about token, this script can't use "bot" token, get user token for self-botting from `Developer Tools > Toggle Device Emulation (ctrl+shift+M) > Application > Local Storage > https://discord.com > Find "Token"`
