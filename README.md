@@ -45,6 +45,7 @@ What command i can use?
 2. `!!undo` to undo last sent message. But if you enabling repeatMsg, let say sending 4 message per 10 second, it only undo the last 4 message.
 3. `!!undoall` same as number 2, but to undo every single message that you sent since you start the bot, if you close the bot console, it reset.
 4. `!!repeatoff` to disable the repeat task but keep the bot online, incase you do something wrong about the message and want to undo it.
+5. `!!repeaton` to enable the repeat task but keep the bot online.
 
 
 ## <a id="troubleshooting"></a>Troubleshooting
