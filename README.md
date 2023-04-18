@@ -51,5 +51,5 @@ What command i can use?
 ## <a id="troubleshooting"></a>Troubleshooting
 1. If there is something error about token, this script can't use "bot" token, get user token for self-botting from `Developer Tools > Toggle Device Emulation (ctrl+shift+M) > Application > Local Storage > https://discord.com > Find "Token"`
 2. If there is error about "FAILED sent to xx", it means the user don't have access to the channel or wrong Guild/Channel ID.
-3. If there is error said like `HTTPError [AbortError]: The user aborted the request.`, it's connection problem, don't use VPN, you can keep trying or if still can't, open main.js with vscode, change the 2nd line from `const client = new Discord.Client();` to `const client = new Discord.Client({restRequestTimeout: 60000});`.
+3. If there is error said like `HTTPError [AbortError]: The user aborted the request.`, it's connection problem, don't use VPN, or you can keep retry it.
 4. If you want to make the spam msg have multiple line at config.json, make it become one line, but every new line, put \n. So like this `This is first line \n This is second line \n etc` or change the double quote (") to backquote (`), and it works for multiple lines.
