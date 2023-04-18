@@ -1,5 +1,5 @@
 const Discord = require("discord.js-selfbot")
-const client = new Discord.Client();
+const client = new Discord.Client({restRequestTimeout: 60000});
 const config = require("./config.json")
 
 
@@ -10,14 +10,14 @@ console.log("[!] Launching the bot...");
 client.on("ready", async() =>{
     console.log("Logged in as "+client.user.tag);
     if(config.sendOnStart){
-        await mainMessage();
+        await mainPromotion();
     }
     await getCommandGetter();
 })
 
 let sentMessagesAll = [];
 let sentMessages = [];
-async function mainMessage(){
+async function mainPromotion(){
     const promotionMsg = config.msg;
     let sent = 0;
     sentMessages = [];
@@ -35,12 +35,12 @@ async function mainMessage(){
         }
     }
     console.log("============================================");
-    console.log(`Sucessfully sent spam message to ${sent}/${config.target.length}`);
+    console.log(`Sucessfully sent promotion message to ${sent}/${config.target.length}`);
     console.log("============================================");
     if(repeat){ 
         console.log(`[!] Repeating task in ${delay} second.`)
         setTimeout(async ()=>{
-            await mainMessage();
+            await mainPromotion();
         }, delay * 1000)
     };
 }
@@ -48,10 +48,14 @@ async function mainMessage(){
 
 async function getCommandGetter(){
     client.on('message', async msg =>{
-        if(msg.content == config.prefix+"run" && msg.author.id == client.user.id){ mainMessage(); }
-        if(msg.content == config.prefix+"undo" && msg.author.id == client.user.id){ deleteMsg(sentMessages, 1) }
-        if(msg.content == config.prefix+"undoall" && msg.author.id == client.user.id){ deleteMsg(sentMessagesAll, 2) }
-        if(msg.content == config.prefix+"repeatoff" && msg.author.id == client.user.id){ repeat = false; }
+        if(msg.author.id != client.user.id) return;
+        if(config.commandExecutor.length > 1 && msg.author.id != config.commandExecutor) return;
+        
+        if(msg.content == config.prefix+"run"){ mainPromotion(); }
+        if(msg.content == config.prefix+"undo"){ deleteMsg(sentMessages, 1) }
+        if(msg.content == config.prefix+"undoall"){ deleteMsg(sentMessagesAll, 2) }
+        if(msg.content == config.prefix+"repeaton"){ repeat = true; }
+        if(msg.content == config.prefix+"repeatoff"){ repeat = false; }
     })
 }
 
@@ -67,7 +71,7 @@ async function deleteMsg(msgList, choice){
             }
     }
     console.log("============================================");
-    console.log(`Successfully deleting ${deleted}/${msgList.length} sent message!`);
+    console.log(`Successfully deleting ${deleted}/${msgList.length} promotion message!`);
     console.log("============================================");
     if(choice == 1){ sentMessages = []; } else { sentMessages = []; sentMessagesAll = []; }
 }
