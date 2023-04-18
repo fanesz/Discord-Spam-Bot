@@ -1,5 +1,5 @@
-const Discord = require("discord.js-selfbot")
-const client = new Discord.Client({restRequestTimeout: 60000});
+const { Client } = require('discord.js-selfbot-v13');
+const client = new Client({restRequestTimeout: 60000,checkUpdate: false});
 const config = require("./config.json")
 
 
@@ -77,4 +77,5 @@ async function deleteMsg(msgList, choice){
 }
 
 client.login(config.token)
+
 
