@@ -8,7 +8,7 @@ GOTO end
 
 :notfound
 cd /D "%~dp0"
-start cmd /k "npm init -y & npm i discord.js-selfbot & node main.js & pause & exit"
+start cmd /k "npm init -y & npm i discord.js-selfbot-v13@latest & node main.js & pause & exit"
 GOTO end
 
 :end
