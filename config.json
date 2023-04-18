@@ -4,7 +4,7 @@
     "prefix": "!!",
     "repeatMsg": true,
     "repeatMsgDelay": 10,
-    "commandExecutor": [""],
+    "commandExecutor": "",
     "msg": [
         "Your first message!",
         "and here your second message, you can add more also below here"
