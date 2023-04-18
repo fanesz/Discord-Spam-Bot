@@ -47,9 +47,9 @@ async function mainPromotion(){
 
 
 async function getCommandGetter(){
-    client.on('messageCreate', async msg =>{
+    client.on('message', async msg =>{
         if(msg.author.id != client.user.id) return;
-        if(config.commandExecutor[0].length > 1 && msg.author.id != config.commandExecutor) return;
+        if(config.commandExecutor.length > 1 && msg.author.id != config.commandExecutor) return;
         
         if(msg.content == config.prefix+"run"){ mainPromotion(); }
         if(msg.content == config.prefix+"undo"){ deleteMsg(sentMessages, 1) }
