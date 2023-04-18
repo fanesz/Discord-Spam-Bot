@@ -2,14 +2,17 @@
     "token":"YourBotToken",
     "sendOnStart": true,
     "prefix": "!!",
-    "repeatMsg": false,
+    "repeatMsg": true,
     "repeatMsgDelay": 10,
+    "commandExecutor": [""],
     "msg": [
         "Your first message!",
         "and here your second message, you can add more also below here"
     ],
     "target":[
-        ["guildID1", "channelID1"], 
-        ["guildID2", "channelID2"]
+        ["GuildID1", "ChannelID1"],
+        ["GuildID2", "ChannelID2"]
     ]
 }
+
+
